@@ -1,0 +1,118 @@
+.messagesender {
+  box-shadow: 0px 0px 3px rgb(31, 31, 31);
+  margin: 0px 50px;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.messagesender .messagesender__top {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgb(211, 211, 211);
+  padding: 10px 20px;
+}
+
+.messagesender .messagesender__top .MuiAvatar-root {
+  width: 30px;
+  height: 30px;
+}
+
+.messagesender .messagesender__top input {
+  padding: 8px 15px;
+  background-color: whitesmoke;
+  border: 0;
+  outline: 0;
+  margin-left: 10px;
+  border-radius: 50px;
+  width: 450px;
+}
+
+.messagesender .messagesender__bottom {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.messagesender .messagesender__bottom .messengerOptions {
+  display: flex;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: 50px;
+}
+
+.messagesender .messagesender__bottom .messengerOptions:hover {
+  background-color: whitesmoke;
+}
+
+.messagesender .messagesender__bottom .messengerOptions p {
+  margin-left: 10px;
+}
+
+.modal__pop {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0px auto;
+  background-color: #fff;
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.modalHeading {
+  text-align: center;
+  border-radius: 1px solid lightgray;
+  height: 40px;
+}
+.modalHeading .MuiIconButton-root {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
+
+.modalHeader__top {
+  display: flex;
+  padding: 15px 0px;
+  align-items: center;
+}
+
+.modalHeader__top h5 {
+  margin-left: 10px;
+}
+
+.modalBody textarea {
+  width: 100%;
+  min-height: 100px;
+  border: 0px;
+  font-size: 25px;
+  outline: 0;
+  padding-top: 10px 0px;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+}
+
+.modalFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 0px 10px;
+}
+
+.post__submit {
+  width: 100%;
+  background-color: #2391fa;
+  padding: 10px 20px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  cursor: pointer;
+}

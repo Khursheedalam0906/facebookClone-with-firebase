@@ -1,0 +1,8 @@
+.sidebar {
+  /* margin-top: 10px; */
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

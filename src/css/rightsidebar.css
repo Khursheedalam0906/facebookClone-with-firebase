@@ -1,0 +1,38 @@
+.widget {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.widget .widget__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.widget__bodyoptions {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.widget__bodyoptions h4 {
+  padding-left: 10px;
+}
+
+.widget__bodyoptions svg {
+  color: gray;
+  font-size: 20px;
+}
+
+.widget__bodyoptions p {
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.widget__headerRight svg {
+  margin: 0px 10px;
+}

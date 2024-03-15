@@ -1,24 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext, useEffect } from "react";
+import "./App.css";
+import Header from "./Header";
+import Login from "./Login";
+import Post from "./Post";
+import Rightsidebar from "./Rightsidebar";
+import Sidebar from "./Sidebar";
+import { StateContext } from "./StateProvider";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "./firebase/firebaseConfig";
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 
 function App() {
+  const [{ user }, dispatch] = useContext(StateContext);
+  // console.log("user", user);
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        dispatch({
+          type: "SET_USER",
+          user: {
+            displayName: user.displayName,
+            photoURL: user.photoURL,
+            email: user.email,
+          },
+        });
+      } else {
+        console.log("something wrong in auth statechanged");
+      }
+    });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {user ? (
+        <div className="App">
+          <Header />
+          <div className="app__body">
+            <Sidebar />
+            <Post />
+            <Rightsidebar />
+          </div>
+        </div>
+      ) : (
+        <Login />
+      )}
+    </>
   );
 }
 

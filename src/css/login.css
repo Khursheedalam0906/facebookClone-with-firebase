@@ -1,0 +1,32 @@
+.login {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.login__container {
+  width: 400px;
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 30px;
+}
+
+.login__container h2 {
+  margin: 15px 0px;
+}
+
+.login__container button {
+  border: 0;
+  outline: 0;
+  background-color: rgb(245, 76, 118);
+  padding: 8px 10px;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login__container button:hover {
+  background-color: rgb(247, 29, 83);
+}

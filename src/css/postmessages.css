@@ -1,0 +1,65 @@
+.postmessages {
+  box-shadow: 0px 0px 1px rgb(32, 32, 32);
+  margin: 20px 50px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.postmessages .postmessages__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.postmessages .postmessages__top .postmessages__topLeft {
+  display: flex;
+}
+
+.postmessages .postmessages__top .postmessages__topLeft .MuiAvatar-root {
+  width: 30px;
+  height: 30px;
+}
+
+.postmessages .postmessages__top .postmessages__name {
+  padding-left: 10px;
+}
+.postmessages .postmessages__topLeft .postmessages__time {
+  display: flex;
+  align-items: center;
+}
+
+.postmessages .postmessages__topLeft .postmessages__time,
+svg {
+  font-size: 12px;
+}
+
+.postmessages .postmessages__topLeft .postmessages__time svg {
+  width: 15px;
+  height: 15px;
+}
+
+.postmessages .postmessages__middle p {
+  padding: 10px 20px;
+}
+
+.postmessages .postmessages__middle img {
+  width: 100%;
+}
+
+.postmessages .postmessages__last {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.postmessages .postmessages__last .postmessages__optiopns {
+  display: flex;
+  align-items: center;
+}
+
+.postmessages .postmessages__last .postmessages__optiopns p {
+  padding-left: 5px;
+}
